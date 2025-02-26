@@ -1,6 +1,6 @@
-# @igniter/eslint-config
+# @igniter-js/eslint-config
 
-[![npm version](https://badge.fury.io/js/@igniter%2Feslint-config.svg)](https://www.npmjs.com/package/@igniter/eslint-config)
+[![npm version](https://badge.fury.io/js/@igniter-js%2Feslint-config.svg)](https://www.npmjs.com/package/@igniter-js/eslint-config)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A carefully crafted ESLint and Prettier configuration preset for modern JavaScript and TypeScript projects. Enforce consistent code style and catch potential errors before they make it to production.
@@ -16,13 +16,13 @@ A carefully crafted ESLint and Prettier configuration preset for modern JavaScri
 
 ```bash
 # Using npm
-npm install --save-dev @igniter/eslint-config
+npm install --save-dev @igniter-js/eslint-config
 
 # Using yarn
-yarn add -D @igniter/eslint-config
+yarn add -D @igniter-js/eslint-config
 
 # Using pnpm
-pnpm add -D @igniter/eslint-config
+pnpm add -D @igniter-js/eslint-config
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ Add the following to your `.eslintrc.json` (or `.eslintrc.js`):
 
 ```json
 {
-  "extends": "@igniter/eslint-config"
+  "extends": "@igniter-js/eslint-config"
 }
 ```
 
@@ -40,7 +40,7 @@ Add the following to your `.eslintrc.json` (or `.eslintrc.js`):
 This config includes Prettier settings. Add a `prettier.config.js` to your project:
 
 ```javascript
-module.exports = require('@igniter/eslint-config/prettier')
+module.exports = require('@igniter-js/eslint-config/prettier')
 ```
 
 ## What's Included
@@ -59,7 +59,7 @@ You can override any rules by adding them to your ESLint config file:
 
 ```json
 {
-  "extends": "@igniter/eslint-config",
+  "extends": "@igniter-js/eslint-config",
   "rules": {
     // Your custom rules here
   }
