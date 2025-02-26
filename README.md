@@ -12,26 +12,50 @@ A carefully crafted ESLint and Prettier configuration preset for modern JavaScri
 - 🔧 Zero configuration needed
 - 📦 Easy to extend and customize
 
-## Installation
+## Installation & Usage
+
+### React (with Next.js)
+Install dependencies:
 
 ```bash
-# Using npm
-npm install --save-dev @igniter-js/eslint-config
-
-# Using yarn
-yarn add -D @igniter-js/eslint-config
-
-# Using pnpm
-pnpm add -D @igniter-js/eslint-config
+npm i -D eslint @igniter-js/eslint-config
 ```
 
-## Usage
-
-Add the following to your `.eslintrc.json` (or `.eslintrc.js`):
-
+Inside `.eslintrc.json`:
 ```json
 {
-  "extends": "@igniter-js/eslint-config"
+  "extends": [
+    "@igniter-js/eslint-config/next",
+    "next/core-web-vitals"
+  ]
+}
+```
+
+### React (without Next.js)
+Install dependencies:
+
+```bash
+npm i -D eslint @igniter-js/eslint-config
+```
+
+Inside `.eslintrc.json`:
+```json
+{
+  "extends": "@igniter-js/eslint-config/react"
+}
+```
+
+### Node.js
+Install dependencies:
+
+```bash
+npm i -D eslint @igniter-js/eslint-config
+```
+
+Inside `.eslintrc.json`:
+```json
+{
+  "extends": "@igniter-js/eslint-config/node"
 }
 ```
 
